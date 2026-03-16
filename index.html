@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Moodify - Your Music, Your Mood</title>
+  </head>
+  <body>
+    <!--=================================================================
+    NAVBAR
+    =================================================================-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#">Moodify</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+            >
+              Artists
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Arijit Singh</a>
+              <a class="dropdown-item" href="#">Shreya Ghoshal</a>
+              <a class="dropdown-item" href="#">Zubeen Garg</a>
+              <a class="dropdown-item" href="#">Raftaar</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="What's your mood?"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--=============================================================================
+    CAROUSEL
+    =================================================================================-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pexels-sebastian-ervi-866902-1763075.jpg" class="d-block w-100" alt="Music Banner 1" />
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pexels-vishnurnair-1105666.jpg" class="d-block w-100" alt="Music Banner 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="pexels-cottonbro-5650791.jpg" class="d-block w-100" alt="Music Banner 3" />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!--====================================================================================
+    MOODS BANNER
+    ======================================================================================-->
+    <div class="container mt-5">
+      <h2 class="text-center">Select Your Mood</h2>
+      <div class="d-flex justify-content-center flex-wrap mt-4">
+        <div class="card" style="width: 18rem">
+          <img src="happy.jpeg" class="card-img-top" alt="Happy" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Happy Mood</h5>
+            <a href="#happy-card" class="btn btn-success">Explore</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="sad.png" class="card-img-top" alt="Sad" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Sad Mood</h5>
+            <a href="#sad-card" class="btn btn-danger">Explore</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="chill.avif" class="card-img-top" alt="Chill" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Chill Mood</h5>
+            <a href="#chill-card" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==========================================================================
+ABOUT MOODIFY SECTION
+================================================================================-->
+    <section class="container mt-5 about">
+      <h2 class="text-center mb-4">About Moodify</h2>
+
+      <p>
+        <strong>Moodify</strong> is a simple music discovery web application
+        created to help users find songs based on their current mood. Music has
+        a strong connection with emotions, and people often choose different
+        songs depending on how they feel. This app makes it easier to quickly
+        explore songs that match your mood.
+      </p>
+
+      <p>
+        Instead of searching through multiple playlists, Moodify organizes songs
+        into mood categories such as <strong>Happy</strong>,
+        <strong>Sad</strong>, and <strong>Chill</strong>. Each category contains
+        songs that match that emotional vibe so users can instantly discover
+        music that fits how they are feeling.
+      </p>
+
+      <h4 class="mt-4">Why this app was created</h4>
+      <p>
+        Many people listen to music while studying, relaxing, travelling, or
+        when they feel emotional. Sometimes it becomes difficult to find the
+        right music quickly. Moodify was created to simplify that experience by
+        grouping songs according to moods so users can easily access the type of
+        music they want.
+      </p>
+
+      <h4 class="mt-4">How to use Moodify</h4>
+      <ol>
+        <li>Open the website and explore the homepage.</li>
+        <li>Select a mood category such as Happy, Sad, or Chill.</li>
+        <li>Browse the list of songs displayed in cards.</li>
+        <li>
+          Click the play button to open the song on YouTube and enjoy the music.
+        </li>
+      </ol>
+
+      <p id="des">
+        Moodify is built as a beginner-friendly frontend project to demonstrate
+        simple user interface design and an easy way to explore music.
+      </p>
+    </section>
+    <!--=======================================================================
+HAPPY SONGS
+========================================================================-->
+    <section id="happy-card" class="container mt-5">
+      <h1 class="section-title text-success">Happy Moods are here...</h1>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/Umqb9KENgmk/mqdefault.jpg"
+            class="card-img-top"
+            alt="Ilahi"
+          />
+          <div class="card-body">
+            <h5>Ilahi</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/Umqb9KENgmk?si=40x8qfKEki2uHx52"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/CWfCp96-yck/mqdefault.jpg"
+            class="card-img-top"
+            alt="teri-ore"
+          />
+          <div class="card-body">
+            <h5>Teri Ore</h5>
+            <p class="card-text">Shreya Ghoshal</p>
+            <a
+              href="https://youtu.be/CWfCp96-yck?si=isFPvFv7RbSOA1vB"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/cTgtI2aJpww/mqdefault.jpg"
+            class="card-img-top"
+            alt="Dilliwaali"
+          />
+          <div class="card-body">
+            <h5>Dilliwaali Baatcheet</h5>
+            <p class="card-text">Raftaar</p>
+            <a
+              href="https://youtu.be/cTgtI2aJpww?si=CZvUlBPg-ufJMHZS"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/nJZcbidTutE/mqdefault.jpg"
+            class="card-img-top"
+            alt="Sooraj Dooba Hai"
+          />
+          <div class="card-body">
+            <h5>Sooraj Dooba Hai</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/nJZcbidTutE?si=Q6Ncejmyfb1w_6WL"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/2IGDsD-dLF8/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Tujhe Kitna Chahne Lage Hum</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/2IGDsD-dLF8?si=oimX2gMbjeUa8tZN"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/NTHz9ephYTw/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Kar Gayi Chull</h5>
+            <p class="card-text">Badshah</p>
+            <a
+              href="https://youtu.be/NTHz9ephYTw?si=2dEZC7oS6M6eeCTF"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/e8B0AzmXPV8/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>First Class</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/e8B0AzmXPV8?si=6elNUJo7cK1ia3E1"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/YYq0zm67bH8/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Jashnn e Bahaaraa</h5>
+            <p class="card-text">Javed Ali</p>
+            <a
+              href="https://youtu.be/YYq0zm67bH8?si=oHnzB882XdFbDLvj"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/zlt38OOqwDc/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Raabta</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/zlt38OOqwDc?si=6gK7nmVkley0B0yW"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/PaDaoNnOQaM/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Mauja Hi Mauja</h5>
+            <p class="card-text">Mika Singh</p>
+            <a
+              href="https://youtu.be/PaDaoNnOQaM?si=hEz55FmwZVaazXyL"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/QXJyMpxd210/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Ve Kamleya</h5>
+            <p class="card-text">Shreya Ghoshal & Arijit Sigh</p>
+            <a
+              href="https://youtu.be/QXJyMpxd210?si=9InZC_SDUvgkfozf"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/TmRgK-pXH9c/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Humnava Mere</h5>
+            <p class="card-text">Jubin Nautiyal</p>
+            <a
+              href="https://youtu.be/TmRgK-pXH9c?si=kq498tOEaJaE1ewd"
+              class="btn btn-sm btn-outline-success"
+              >Play</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================================================================================
+SAD SONGS LIST
+===========================================================================================-->
+    <section id="sad-card" class="container mt-5">
+      <h1 class="section-title text-danger">Sad Moods...</h1>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/cYOB941gyXI/mqdefault.jpg"
+            class="card-img-top"
+            alt="Hawayein"
+          />
+          <div class="card-body">
+            <h5>Hawayein</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/cYOB941gyXI?si=Hpi7nQt4Zrv0m15E"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/inEu2qQuGZ8/maxresdefault.jpg"
+            class="card-img-top"
+            alt="Sunn Raha Hai"
+          />
+          <div class="card-body">
+            <h5>Sunn Raha Hai</h5>
+            <p class="card-text">Shreya Ghoshal</p>
+            <a
+              href="https://youtu.be/inEu2qQuGZ8?si=tldE20qzzhxq66nD"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/pmHnlBqjpm0/maxresdefault.jpg"
+            class="card-img-top"
+            alt="Ya Ali"
+          />
+          <div class="card-body">
+            <h5>Ya Ali</h5>
+            <p class="card-text">Zubeen Garg</p>
+            <a
+              href="https://youtu.be/pmHnlBqjpm0?si=eaNJP6I7C7sDjUNs"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/sK7riqg2mr4/maxresdefault.jpg"
+            class="card-img-top"
+            alt="Agar Tum Saath Ho"
+          />
+          <div class="card-body">
+            <h5>Agar Tum Saath Ho</h5>
+            <p class="card-text">Arijit Singh & Alka Yagnik</p>
+            <a
+              href="https://youtu.be/sK7riqg2mr4?si=yeW8qDMj5IxTilXz"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/Umqb9KENgmk/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Tum Hi Ho</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/Umqb9KENgmk?si=wErQ9wqGGpA5jTyg"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/J2JQQm1h6xQ/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Bhojena Shey Bhojena</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/J2JQQm1h6xQ?si=98wWLgSRU1PFHhkO"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/F5jx75KYhNY/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Tujhe Bhoolna Toh Chaaha</h5>
+            <p class="card-text">Jubin Nautiyal</p>
+            <a
+              href="https://youtu.be/F5jx75KYhNY?si=Xf1mO8NzReTepwPb"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/SAcpESN_Fk4/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Dil Diya Gallan</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/SAcpESN_Fk4?si=R9iPczbOB5GuB7RY"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/AqUonMjxaog/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Mayabini</h5>
+            <p class="card-text">Zubeen Garg</p>
+            <a
+              href="https://youtu.be/AqUonMjxaog?si=9J1adHF87ix9J1I_"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/M_V8FLrll9w/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Duaa</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/M_V8FLrll9w?si=dovxa83vvZ7jWOTb"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/szdRoROQy_c/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Jiyein Kyun</h5>
+            <p class="card-text">Papon</p>
+            <a
+              href="https://youtu.be/szdRoROQy_c?si=7Q6T9L2ntXdi1fHd"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/FGTv9-oQhIg/maxresdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Thodi Der</h5>
+            <p class="card-text">Shreya Ghoshal</p>
+            <a
+              href="https://youtu.be/FGTv9-oQhIg?si=5QZayNEmexHzHQ0u"
+              class="btn btn-sm btn-outline-danger"
+              >Listen</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=======================================================================================
+CHILL SONGS
+================================================================================================-->
+    <section id="chill-card" class="container mt-5 mb-5">
+      <h1 class="section-title text-primary">Chill Vibes...</h1>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/o907r6NsK9s/mqdefault.jpg"
+            class="card-img-top"
+            alt="Saza-E-Maut"
+          />
+          <div class="card-body">
+            <h5>Saza-E-Maut</h5>
+            <p class="card-text">Raftaar x KR$NA</p>
+            <a
+              href="https://youtu.be/o907r6NsK9s?si=8yjuPBka18SU-4Ih"
+              class="btn btn-sm btn-outline-primary"
+              >Chill Now</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/61poA5G1llc/mqdefault.jpg"
+            class="card-img-top"
+            alt="Rozana"
+          />
+          <div class="card-body">
+            <h5>Baby Marvake Manegi</h5>
+            <p class="card-text">Raftaar</p>
+            <a
+              href="https://youtu.be/61poA5G1llc?si=rVFzK0-M5eHBfGXv"
+              class="btn btn-sm btn-outline-primary"
+              >Chill Now</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/Wd7H311MrWA/mqdefault.jpg"
+            class="card-img-top"
+            alt="Phir Le Aya Dil"
+          />
+          <div class="card-body">
+            <h5>Party All Night</h5>
+            <p class="card-text">Yo Yo Honey Singh</p>
+            <a
+              href="https://youtu.be/Wd7H311MrWA?si=aahBPllJbEZFws0O"
+              class="btn btn-sm btn-outline-primary"
+              >Chill Now</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/ReXw6TOnUOc/mqdefault.jpg"
+            class="card-img-top"
+            alt="Dilli Waali Baatcheet"
+          />
+          <div class="card-body">
+            <h5>All Black</h5>
+            <p class="card-text">Raftaar</p>
+            <a
+              href="https://youtu.be/ReXw6TOnUOc?si=IA2lBdUbMaNutHrk"
+              class="btn btn-sm btn-outline-primary"
+              >Chill Now</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/FxAG_11PzCk/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Galiyan</h5>
+            <p class="card-text">Ankit Tiwari</p>
+            <a
+              href="https://youtu.be/FxAG_11PzCk?si=YqOay_gKaxJDjAnD"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/KGn-erOG-Bs/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Laal Pari</h5>
+            <p class="card-text">Yo Yo Honey Singh</p>
+            <a
+              href="https://youtu.be/KGn-erOG-Bs?si=spx6DZjxsIH5jzzJ"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/OgRoRBLZbUQ/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Angaron</h5>
+            <p class="card-text">Shreya Ghoshal</p>
+            <a
+              href="https://youtu.be/OgRoRBLZbUQ?si=6fKKemdXKcKYRb2k"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/9Bmh6vaQt0s/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Saibo</h5>
+            <p class="card-text">Shreya Ghoshal</p>
+            <a
+              href="https://youtu.be/9Bmh6vaQt0s?si=ALk9y_Xr7tBpIgCA"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/HexFqifusOk/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Jogi</h5>
+            <p class="card-text">Yasser Desai & Aakanksha Sharma</p>
+            <a
+              href="https://youtu.be/HexFqifusOk?si=t3VzpFyXB097G-4U"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/fXRvluHnjxE/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Mast Magan</h5>
+            <p class="card-text">Arijit Singh</p>
+            <a
+              href="https://youtu.be/fXRvluHnjxE?si=ADF-Jcah4Fsl-hE-"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/YxWlaYCA8MU/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Jhoome Jo Pathaan</h5>
+            <p class="card-text">Arijit Singh & Sukriti Kumaar</p>
+            <a
+              href="https://youtu.be/YxWlaYCA8MU?si=sYApqoMhJP8tiioZ"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 17rem">
+          <img
+            src="https://img.youtube.com/vi/yW63GZHF1wQ/mqdefault.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5>Swag Mera Desi</h5>
+            <p class="card-text">Raftaar</p>
+            <a
+              href="https://youtu.be/yW63GZHF1wQ?si=OC99ITVtJ7dmlyRh"
+              class="btn btn-sm btn-outline-primary"
+              >Vibe</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==================================================================================
+FOOTER SECTION
+===================================================================================-->
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h2>Music Vibes</h2>
+          <p>
+            Discover romantic, chill and trending songs from artists like Arijit
+            Singh, Shreya Ghoshal and many more.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trending Songs</a></li>
+            <li><a href="#">Romantic Songs</a></li>
+            <li><a href="#">Chill Songs</a></li>
+            <li><a href="#">Party Songs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Popular Artists</h3>
+          <ul>
+            <li>Arijit Singh</li>
+            <li>Shreya Ghoshal</li>
+            <li>Jubin Nautiyal</li>
+            <li>Raftaar</li>
+            <li>Zubeen Garg</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Me</h3>
+
+          <a href="https://www.instagram.com/suraj_nits_?igsh=ZmwyaHZ2dTUzNGww" class="social">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+
+          <a href="https://www.linkedin.com/in/suroj03?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHL4xKTvPTKuaX9ZwBi6V2Q%3D%3D" class="social">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="https://suroj-portfolio.netlify.app/" class="social">
+            <i class="fa-brands fa-github"></i> Portfolio
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Music Vibes | Created in 2026</p>
+
+        <p class="disclaimer">
+          Disclaimer: Songs and videos used on this website belong to their
+          respective artists, music labels, and owners. This website does not
+          claim ownership and respects all original creators. This website is
+          created for educational purposes only.
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

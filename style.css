@@ -1,0 +1,199 @@
+
+      /* target the images inside the carousel */
+.carousel-item img {
+    height: 40vh;
+    object-fit: cover; /* This prevents the images from looking stretched */
+    width: 100%;       /* Ensures it spans the full width of the container */
+}
+.about{
+    background-color: #ffffff;
+    padding: 30px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    h2{
+        color: blue;
+        text-align: center;
+        text-decoration: underline;
+    }
+    strong{
+        color: red;
+    }
+    h4{
+        color: blue;
+        text-decoration: underline;  
+    }
+    #des{
+        color: purple;
+    }
+}
+
+      /* Custom styles to ensure cards look uniform */
+      .card {
+        margin: 15px;
+        transition: transform 0.3s;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card-img-top {
+        height: 180px;
+        object-fit: cover;
+      }
+      section {
+        padding-top: 60px;
+      }
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: bold;
+        color: #333;
+      }
+.text-center{
+  color: red
+}
+body{
+  background: linear-gradient(270deg,#0b132b,#1a1a2e,#0b132b);
+  background-size:400% 400%;
+  animation: bgmove 12s ease infinite;
+}
+
+@keyframes bgmove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+/* Existing styles remain above... */
+
+/*==================================================================================
+MOBILE RESPONSIVENESS UPDATES
+===================================================================================*/
+
+/* Adjusting the About section for mobile devices */
+@media (max-width: 768px) {
+    .about {
+        padding: 15px;
+        margin: 10px;
+        width: auto;
+    }
+
+    /* Target the Select Your Mood cards to stack neatly */
+    .container .d-flex.justify-content-center.flex-wrap .card {
+        width: 90% !important; /* Forces cards to take full width on mobile */
+        margin: 10px auto;
+    }
+
+    /* Target the Song cards in the Happy, Sad, and Chill sections */
+    .row.justify-content-center .card {
+        width: 45% !important; /* Shows 2 cards per row on tablets */
+        margin: 5px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Specific adjustments for very small phones */
+@media (max-width: 480px) {
+    .row.justify-content-center .card {
+        width: 90% !important; /* Shows 1 card per row on small phones */
+    }
+
+    .carousel-item img {
+        height: 30vh; /* Reduces carousel height to save screen space */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+.footer{
+    background:#0f172a;
+    color:white;
+    padding:40px 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer-section{
+    width:220px;
+    margin-bottom:20px;
+}
+
+.footer-section h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.footer-section h3{
+    color:#22c55e;
+    margin-bottom:10px;
+}
+
+.footer-section p{
+    font-size:14px;
+    line-height:1.5;
+}
+
+.footer-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-section ul li{
+    margin-bottom:8px;
+}
+
+.footer-section ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.footer-section ul li a:hover{
+    color:#ef4444;
+}
+
+.social{
+    display:block;
+    margin:8px 0;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.social i{
+    margin-right:8px;
+}
+
+.social:hover{
+    color:#38bdf8;
+    transform:translateX(5px);
+}
+
+.footer-bottom{
+    border-top:1px solid #444;
+    margin-top:20px;
+    padding-top:15px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    font-size:13px;
+    opacity:0.9;
+}
+
+.disclaimer{
+    margin-top:8px;
+    color:#cbd5e1;
+}
