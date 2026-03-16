@@ -12,20 +12,20 @@
         music that fits how they are feeling.
       
 
-      ## Why this app was created?
+        Why this app was created?
         Many people listen to music while studying, relaxing, travelling, or
         when they feel emotional. Sometimes it becomes difficult to find the
         right music quickly. Moodify was created to simplify that experience by
         grouping songs according to moods so users can easily access the type of
         music they want.
 
-      How to use Moodify?
+         How to use Moodify?
         Open the website and explore the homepage.</li>
         Select a mood category such as Happy, Sad, or Chill.</li>
         Browse the list of songs displayed in cards.</li>
         
-          Click the play button to open the song on YouTube and enjoy the music.
+        Click the play button to open the song on YouTube and enjoy the music.
 
-      ## Moodify is built as a beginner-friendly frontend project to demonstrate
+        Moodify is built as a beginner-friendly frontend project to demonstrate
         simple user interface design and an easy way to explore music.
       
