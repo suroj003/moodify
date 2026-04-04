@@ -1,4 +1,4 @@
-## About Moodify
+## About Moodify(Your musicm app)
         Moodify is a simple music discovery web application
         created to help users find songs based on their current mood. Music has
         a strong connection with emotions, and people often choose different
